@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Christine Cabase — E-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Open Sans', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          },
+          colors: {
+            lavender: '#E6E6FA',
+            lavenderDark: '#CFCFFF',
+            accent: '#BFAFFF'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(-40px);
+      transition: all 0.8s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    }
+    .social-icon {
+      background-color: #fff;
+      padding: 12px;
+      border-radius: 9999px;
+      border: 2px solid #BFAFFF;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(191,175,255,0.5);
+    }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <header class="bg-gradient-to-r from-lavender to-accent text-gray-900 py-10 shadow-md reveal">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col items-center md:flex-row md:items-center gap-4">
+      <div class="w-20 h-20 flex-shrink-0 rounded-full border-4 border-white shadow-lg overflow-hidden">
+        <img src="myphoto.jpg" alt="Mary Christine Cabase" class="w-full h-full object-cover">
+
+      </div>
+      <div class="text-center md:text-left">
+        <h1 class="text-5xl font-heading font-bold text-white drop-shadow-md">Mary Christine Cabase</h1>
+        <p class="text-lg font-medium">Information Technology Student</p>
+      </div>
+    </div>
+    <nav class="mt-6 flex gap-4 font-medium justify-center md:justify-start">
+      <a href="#about" class="hover:text-white transition">About</a>
+      <a href="#education" class="hover:text-white transition">Education</a>
+      <a href="#experience" class="hover:text-white transition">Experience</a>
+      <a href="#skills" class="hover:text-white transition">Skills</a>
+      <a href="#contact" class="hover:text-white transition">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="bg-white py-10 reveal">
+    <div class="max-w-5xl mx-auto px-6 card-hover rounded-lg border border-lavender p-6">
+      <h2 class="text-3xl font-heading font-bold mb-4 text-accent">About Me</h2>
+      <p class="font-medium">Email: <span class="text-accent font-semibold">iaminferni@gmail.com</span></p>
+      <p class="font-medium">Phone: <span class="text-accent font-semibold">09460200644</span></p>
+      <p class="font-medium">Location: Hinoba-an, Negros Occidental</p>
+      <p class="mt-4 leading-relaxed">
+        Motivated and tech-savvy <span class="font-semibold text-accent">Bachelor of Science in Information Technology</span> student at STI West Negros University with a strong interest in cybersecurity, graphics, and emerging technologies. I am eager to apply my technical skills, academic knowledge, and problem-solving abilities in a dynamic and growth-oriented IT environment.
+      </p>
+    </div>
+  </section>
+
+  <section id="education" class="bg-lavender py-10 reveal">
+    <div class="max-w-5xl mx-auto px-6 card-hover bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-heading font-bold mb-4 text-accent">Education Experience</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li class="reveal delay-1"><span class="font-semibold text-accent">2022-2026</span> — STI West Negros University — Bachelor of Science in Information Technology</li>
+        <li class="reveal delay-2"><span class="font-semibold text-accent">2016-2022</span> — Our Lady of Sorrows Academy — Junior & Senior Highschool</li>
+        <li class="reveal delay-3"><span class="font-semibold text-accent">2010-2016</span> — Bacuyangan Elementary School — Elementary</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-white py-10 reveal">
+    <div class="max-w-5xl mx-auto px-6 card-hover border border-lavender p-6 rounded-lg">
+      <h2 class="text-3xl font-heading font-bold mb-4 text-accent">Experience & Projects</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-lavenderDark p-4 rounded shadow-sm reveal delay-1">
+          <p class="font-bold text-accent">2023-2024 — KART APPLICATION</p>
+          <p class="italic">Project Leader</p>
+        </div>
+        <div class="bg-lavenderDark p-4 rounded shadow-sm reveal delay-2">
+          <p class="font-bold text-accent">2024-2025 — Genesis: Arduino MoBot</p>
+          <p class="italic">Project Leader</p>
+        </div>
+        <div class="bg-lavenderDark p-4 rounded shadow-sm reveal delay-3">
+          <p class="font-bold text-accent">2024-2025 — iKolek: Smart Waste Routing System</p>
+          <p class="italic">Project Analyst</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-lavender py-10 reveal">
+    <div class="max-w-5xl mx-auto px-6 card-hover bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-heading font-bold mb-4 text-accent">Languages & Skills</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li class="reveal delay-1"><span class="font-semibold text-accent">English</span> — Technological Proficiency</li>
+        <li class="reveal delay-2"><span class="font-semibold text-accent">Filipino</span> — Change-adept</li>
+        <li class="reveal delay-3"><span class="font-semibold text-accent">Hiligaynon</span> — Critical Thinker</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-gradient-to-r from-accent to-lavenderDark py-10 text-white reveal">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-heading font-bold mb-4">Contact Me</h2>
+      <p class="mb-6">Let’s get in touch! You can reach me through the links below:</p>
+      <div class="flex justify-center gap-8 text-lg">
+        <a href="https://www.facebook.com/share/16NGGY9jmK/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center hover:opacity-90 transition reveal delay-1">
+          <div class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" stroke="#BFAFFF" fill="none" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.5l.5-4H14V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </div>
+          <span class="mt-1 text-sm">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/mex10ri/profilecard/?igsh=Y2VjbTRvbG9rYmpv" target="_blank" class="flex flex-col items-center hover:opacity-90 transition reveal delay-2">
+          <div class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" stroke="#BFAFFF" fill="none" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+            </svg>
+          </div>
+          <span class="mt-1 text-sm">Instagram</span>
+        </a>
+        <a href="mailto:iaminferni@gmail.com" class="flex flex-col items-center hover:opacity-90 transition reveal delay-3">
+          <div class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" stroke="#BFAFFF" fill="none" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M4 4h16v16H4z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <span class="mt-1 text-sm">Gmail</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 py-4 text-center text-sm reveal">
+    &copy; 2025 Mary Christine Cabase. All rights reserved.
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+  </script>
+
+</body>
+</html>
